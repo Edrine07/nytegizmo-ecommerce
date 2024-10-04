@@ -1,0 +1,30 @@
+<nav class="navbar bg-gray-50">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <a class="btn btn-ghost text-md font-bold">
+        <div class="border-1 bg-gray-200 logo p-2 rounded-md" routerLink="/">NytGizmo</div>
+      </a>
+    </div>
+    <div class="navbar-center flex">
+      <div class="menu menu-sm sm:menu-lg menu-horizontal px-1">
+        <li><a href="/" class="text-xs">Home</a></li>
+        <li>
+          <details #productMenu>
+            <summary>Products</summary>
+            <ul class="z-30">
+              <li><a href="/products">All</a></li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details #adminMenu>
+            <summary>Products</summary>
+            <ul class="z-30">
+              <li><a href="/Admin">All</a></li>
+            </ul>
+          </details>
+        </li>
+      </div>
+    </div>
+  </div>
+</nav>
